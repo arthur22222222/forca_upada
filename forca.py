@@ -1,45 +1,10 @@
 import random
+from programacao import programacao
+from animais import animais
+from jogo import jogo
 
 def jogo_forca():
-    jogos = [
-        "minecraft", "roblox", "valorant", "fortnite", "csgo",
-        "league of legends", "free fire", "call of duty", "fifa 23", "pes 2021",
-        "gta v", "red dead redemption 2", "among us", "fall guys", "apex legends",
-        "overwatch", "rainbow six siege", "the witcher 3", "cyberpunk 2077", "elden ring",
-        "dark souls", "bloodborne", "resident evil 4", "resident evil village", "silent hill",
-        "god of war", "horizon zero dawn", "the last of us", "uncharted 4", "spider-man",
-        "batman arkham knight", "assassin's creed valhalla", "assassin's creed odyssey", "watch dogs 2", "far cry 5",
-        "far cry 6", "borderlands 3", "destiny 2", "halo infinite", "forza horizon 5",
-        "need for speed heat", "gran turismo 7", "rocket league", "brawl stars", "clash royale",
-        "clash of clans", "subway surfers", "temple run", "plants vs zombies", "angry birds"
-    ]
-    animais = [
-        "Leão", "Elefante", "Sapo", "Arara", "Tubarão",
-        "Cachorro", "Gato", "Cavalo", "Vaca", "Porco",
-        "Galinha", "Pato", "Peru", "Coelho", "Ovelha",
-        "Cabra", "Leopardo", "Tigre", "Urso", "Lobo",
-        "Raposa", "Hiena", "Girafa", "Zebra", "Rinoceronte",
-        "Hipopótamo", "Canguru", "Coala", "Panda", "Macaco",
-        "Chimpanzé", "Gorila", "Crocodilo", "Jacaré", "Águia",
-        "Falcão", "Coruja", "Pinguim", "Golfinho", "Baleia",
-        "Polvo", "Lula", "Caranguejo", "Lagosta", "Formiga",
-        "Abelha", "Borboleta", "Mosquito", "Cobra", "Lagarto"
-    ]
-    programacao = [
-        "ALGORITMO", "PROGRAMA", "CODIGO", "VARIAVEL", "FUNCAO",
-        "CLASSE", "OBJETO", "HERANCA", "LOOP", "CONDICAO",
-        "PYTHON", "JAVA", "JAVASCRIPT", "HTML", "CSS",
-        "REACT", "NODE", "SQL", "BANCO", "DADOS",
-        "SERVIDOR", "CLIENTE", "API", "JSON", "DEBUG",
-        "COMPILADOR", "INTERPRETADOR", "FRAMEWORK", "BIBLIOTECA", "GIT",
-        "GITHUB", "VERSIONAMENTO", "DEPLOY", "CLOUD", "HOSPEDAGEM",
-        "DOMINIO", "BACKEND", "FRONTEND", "FULLSTACK", "SCRIPT",
-        "TERMINAL", "LINUX", "WINDOWS", "MACOS", "INTELIGENCIA",
-        "ARTIFICIAL", "MACHINE", "LEARNING", "DADOS", "SEGURANCA"
-    ]
     
-    palavra = random.choice(programacao)
-
     print("Bem-vindo ao jogo da forca!")
     print("================================================")
     print("Escolha uma categoria:")
@@ -52,7 +17,7 @@ def jogo_forca():
     opcao = input("Digite o número da categoria desejada: ")
 
     if opcao == "1":
-        palavra = random.choice(jogos)
+        palavra = random.choice(jogo)
     elif opcao == "2":
         palavra = random.choice(animais)
     elif opcao == "3":
